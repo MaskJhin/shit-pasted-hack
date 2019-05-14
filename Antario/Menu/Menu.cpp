@@ -615,7 +615,7 @@ void Menu::Render()
 	g_pSurface->OutlinedRect(_pos.x, _pos.y, _width, _height, Color(65, 63, 79, MenuAlpha_Main));
 	g_pSurface->OutlinedRect(_pos.x, _pos.y + 19, _width, 1, Color(65, 63, 79, MenuAlpha_Main));
 
-	RECT TitleText_Size = g_pSurface->GetTextSizeRect(Globals::CourierNew, "Geminisoftware.us - CSGO");
+	RECT TitleText_Size = g_pSurface->GetTextSizeRect(Globals::CourierNew, "shit pasted hack - CSGO");
 
 	g_pSurface->DrawT(_pos.x + 3, _pos.y + (20 / 2) - (TitleText_Size.bottom / 2), Color(143, 143, 143, MenuAlpha_Text), Globals::CourierNew, false, "Geminisoftware.us - CSGO");
 
@@ -837,7 +837,7 @@ void Menu::Render()
 				combobox(2, "On Shot AA Type", on_shot, &c_config::get().on_shot_aa_type);
 			}
 
-			slider(180, "Angle Jitter", &c_config::get().aa_jitter, "°", 1);
+			slider(180, "Angle Jitter", &c_config::get().aa_jitter, "Â°", 1);
 		}
 		break;
 		}
@@ -925,13 +925,13 @@ void Menu::Render()
 
 		groupbox(TopLeftGroupBox_X + GroupBoxSize_Width + 5, TopLeftGroupBox_Y, GroupBoxSize_Width, GroupBoxSize_Height,
 			"test");
-		slider(135, "Field Of View", &c_config::get().fov, "°", 1);
+		slider(135, "Field Of View", &c_config::get().fov, "Â°", 1);
 		checkbox("Retain FOV When Scoped", &c_config::get().fov_while_zoomed);
-		slider(135, "Viewmodel Field Of View", &c_config::get().viewmodel_fov, "°", 1);
+		slider(135, "Viewmodel Field Of View", &c_config::get().viewmodel_fov, "Â°", 1);
 
 		checkbox("Nightmode", &c_config::get().nightmode);
 		checkbox("Transparent Props", &c_config::get().transparent_props);
-		slider(135, "Thirdperson Distance", &c_config::get().thirdperson_distance, "°", 1);
+		slider(135, "Thirdperson Distance", &c_config::get().thirdperson_distance, "Â°", 1);
 		checkbox("Remove Visual Recoil", &c_config::get().remove_visual_recoil);
 		std::string nosmoke_type[3] = { "Disabled", "No Draw", "Wireframe" };
 		checkbox("No Smoke", &c_config::get().no_smoke);
